@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferradosa Rose - Nutrition Declaration</title>
+    <!-- Import Google Font Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #1a1a1a;
+            --secondary-color: #555;
+            --border-color: #e0e0e0;
+            --bg-color: #fff;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--primary-color);
+            max-width: 450px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            background-color: var(--bg-color);
+        }
+
+        /* Language Selector */
+        .language-selector-container {
+            margin-bottom: 20px;
+            text-align: right;
+        }
+
+        select#language-select {
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 12px;
+            background-color: #fff;
+            cursor: pointer;
+        }
+
+        /* Logos and Header */
+        .brand-logo {
+            max-width: 120px;
+            margin-bottom: 10px;
+        }
+
+        .product-image {
+            height: 300px;
+            object-fit: contain;
+            margin: 15px 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h1 {
+            font-size: 22px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin: 10px 0 5px 0;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--secondary-color);
+            margin: 0 0 20px 0;
+            font-weight: normal;
+        }
+
+        .section-title {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            border-bottom: 1px solid #000;
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+
+        .per-value {
+            font-size: 10px;
+            font-weight: normal;
+            display: block;
+            margin-top: 2px;
+        }
+
+        /* Nutrition Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 12px;
+            margin-bottom: 25px;
+            text-align: left;
+        }
+
+        th {
+            border-bottom: 1px solid #000;
+            padding: 8px 0;
+            vertical-align: bottom;
+            font-weight: bold;
+            text-transform: uppercase;
+            width: 60%;
+        }
+
+        td {
+            border-bottom: 1px solid var(--border-color);
+            padding: 8px 0;
+            vertical-align: middle;
+        }
+
+        .col-value {
+            text-align: right;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+
+        .sub-item {
+            padding-left: 15px;
+            font-style: italic;
+            color: #444;
+        }
+
+        /* Ingredients and Footer */
+        .ingredients-section {
+            font-size: 11px;
+            line-height: 1.4;
+            margin-bottom: 30px;
+            color: #333;
+            text-align: left;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+        }
+
+        .ingredients-title {
+            font-weight: bold;
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .bottler-info {
+            font-size: 10px;
+            color: #555;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .footer-logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+
+        .icon {
+            height: 40px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .responsible-text {
+            font-size: 10px;
+            color: #666;
+            margin-top: 15px;
+            text-transform: uppercase;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="language-selector-container">
+        <select id="language-select" onchange="changeLanguage(this.value)">
+            <!-- Options populated by JS -->
+        </select>
+    </div>
+
+    <!-- Header Logo -->
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3ZtdOylfNPkOj0IV7ui5UZpq7h3xG4mmzWw&s" alt="Logo" class="brand-logo">
+
+    <!-- Product Image -->
+    <!-- Updated to Ferradosa Rose Image -->
+    <img src="https://drive.google.com/thumbnail?id=1b4wswe9yhNJTrYOkMFuIE-D2p3GGb0W1&sz=w1000" alt="Ferradosa Rose Bottle" class="product-image">
+
+    <!-- Product Details -->
+    <h1>Ferradosa Rose</h1>
+    <h2>2024 • Douro • Portugal • Alc. 11.8% vol</h2>
+
+    <!-- Nutrition Declaration -->
+    <div class="section-title">
+        <span data-key="nutritionDeclaration">Nutrition Declaration</span>
+        <span class="per-value" data-key="per100">per 100 ml</span>
+    </div>
+
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <strong data-key="energy">Energy</strong>
+                </td>
+                <td class="col-value">
+                    289 kJ / 69 kcal
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span data-key="fat">Fat</span>
+                </td>
+                <td class="col-value">
+                    0 g
+                </td>
+            </tr>
+            <tr>
+                <td class="sub-item">
+                    <span data-key="saturates">of which saturates</span>
+                </td>
+                <td class="col-value">
+                    0 g
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span data-key="carbs">Carbohydrate</span>
+                </td>
+                <td class="col-value">
+                    0,8 g
+                </td>
+            </tr>
+            <tr>
+                <td class="sub-item">
+                    <span data-key="sugars">of which sugars</span>
+                </td>
+                <td class="col-value">
+                    0,1 g
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span data-key="protein">Protein</span>
+                </td>
+                <td class="col-value">
+                    0 g
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span data-key="salt">Salt</span>
+                </td>
+                <td class="col-value">
+                    0 g
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Ingredients -->
+    <div class="ingredients-section">
+        <span class="ingredients-title" data-key="ingredientsTitle">INGREDIENTS:</span>
+        <span id="ingredients-text">
+            <span data-key="grapes">Grapes</span>, 
+            <span data-key="preservative">preservative</span> 
+            (<strong><span data-key="sulphites">sulphites</span></strong>).
+        </span>
+    </div>
+
+    <!-- Bottler Info -->
+    <div class="bottler-info" data-key="bottler">
+        Produced and Bottled by: OPF SOCIEDADE AGRÍCOLA, LDA
+    </div>
+
+    <!-- Footer Logos -->
+    <div class="footer-logos">
+        <img src="https://wineinmoderation.eu/assets/Site/img/logo/logo.png" alt="Wine in Moderation" class="icon">
+        <img src="https://drive.google.com/thumbnail?id=1I3QHAMYYyxeP5OlrBFLAHS6nBygMFLFM&sz=w1000" alt="Under 18" class="icon">
+        <img src="https://drive.google.com/thumbnail?id=16F9I6L7nMxJ1b-vQQGELuVfEYA6XhBVk&sz=w1000" alt="Don't Drink and Drive" class="icon">
+    </div>
+
+    <div class="responsible-text" data-key="responsible">
+        Be Responsible. Drink in Moderation.
+    </div>
+
+    <script>
+        // Full dictionary of all 24 EU Official Languages
+        const translations = {
+            "bg": { name: "Български", nutritionDeclaration: "Хранителна стойност", per100: "на 100 ml", energy: "Енергийна стойност", fat: "Мазнини", saturates: "от които наситени мастни киселини", carbs: "Въглехидрати", sugars: "от които захари", protein: "Белтъци", salt: "Сол", ingredientsTitle: "СЪСТАВКИ:", grapes: "Грозде", preservative: "консервант", sulphites: "сулфити", responsible: "Бъдете отговорни. Пийте умерено.", bottler: "Произведено и бутилирано от: OPF SOCIEDADE AGRÍCOLA, LDA" },
+            "cs": { name: "Čeština", nutritionDeclaration: "Výživové údaje", per100: "na 100 ml", energy: "Energetická hodnota", fat: "Tuky", saturates: "z toho nasycené mastné kyseliny", carbs: "Sacharidy", sugars: "z toho cukry", protein: "Bílkoviny", salt: "Sůl", ingredientsTitle: "SLOŽENÍ:", grapes: "Hrozny", preservative: "konzervant", sulphites: "siřičitany", responsible: "Buďte zodpovědní. Pijte s mírou.", bottler: "Vyrobeno a plněno: OPF SOCIEDADE AGRÍCOLA, LDA" },
+            "da": { name: "Dansk", nutritionDeclaration: "Næringsdeklaration", per100: "pr. 100 ml", energy: "Energi", fat: "Fedt", saturates: "heraf mættede fedtsyrer", carbs: "Kulhydrat", sugars: "heraf sukkerarter", protein: "Protein", salt: "Salt", ingredientsTitle: "INGREDIENSER:", grapes: "Druer", preservative: "konserveringsmiddel", sulphites: "sulfitter", responsible: "Vær ansvarlig. Drik med måde.", bottler: "Produceret og tappet af: OPF SOCIEDADE AGRÍCOLA, LDA" },
+            "de": { name: "Deutsch", nutritionDeclaration: "Nährwertdeklaration", per100: "je 100 ml", energy: "Energie", fat: "Fett", saturates: "davon gesättigte Fettsäuren", carbs: "Kohlenhydrate", sugars: "davon Zucker", protein: "Eiweiß", salt: "Salz", ingredientsTitle: "ZUTATEN:", grapes: "Trauben", preservative: "Konservierungsstoff", sulphites: "Sulfite", responsible: "Seien Sie verantwortungsbewusst. Trinken Sie in Maßen.", bottler: "Produziert und abgefüllt von: OPF SOCIEDADE AGRÍCOLA, LDA" },
+            "et": { name: "Eesti", nutritionDeclaration: "Toitumisalane teave", per100: "100 ml kohta", energy: "Energia", fat: "Rasvad", saturates: "millest küllastunud rasvhapped", carbs: "Süsivesikud", sugars: "millest suhkrud", protein: "Valgud", salt: "Sool", ingredientsTitle: "KOOSTISOSAD:", grapes: "Viinamarjad", preservative: "säilitusaine", sulphites: "sulfitid", responsible: "Ole vastutustundlik. Joo mõõdukalt.", bottler: "Tootnud ja pudeldanud: OPF SOCIEDADE AGRÍCOLA, LDA" },
+            "el": { name: "Ελληνικά", nutritionDeclaration: "Διατροφική δήλωση", per100: "ανά 100 ml", energy: "Ενέργεια", fat: "Λιπαρά", saturates: "εκ των οποίων κορεσμένα", carbs: "Υδατάνθρακες", sugars: "εκ των οποίων σάκχαρα", protein: "Πρωτεΐνες", salt: "Αλάτι", ingredientsTitle: "ΣΥΣΤΑΤΙΚΑ:", grapes: "Σταφύλια", preservative: "συντηρητικό", sulphites: "θειώδη", responsible: "Να είστε υπεύθυνοι. Πίνετε με μέτρο.", bottler: "Παράγεται και εμφιαλώνεται από: OPF SOCIEDADE AGRÍCOLA, LDA" },
+            "en": { name: "English", nutritionDeclaration: "Nutrition Declaration", per100: "per 100 ml", energy: "Energy", fat: "Fat", saturates: "of which saturates", carbs: "Carbohydrate", sugars: "of which sugars", protein: "Protein", salt: "Salt", ingredientsTitle: "INGREDIENTS:", grapes: "Grapes", preservative: "preservative", sulphites: "sulphites", responsible: "Be Responsible. Drink in Moderation.", bottler: "Produced and Bottled by: OPF SOCIEDADE AGRÍCOLA, LDA" },
+            "es": { name: "Español", nutritionDeclaration: "Información nutricional", per100: "por 100 ml", energy: "Valor energético", fat: "Grasas", saturates: "de las cuales saturadas", carbs: "Hidratos de carbono", sugars: "de los cuales azúcares", protein: "Proteínas", salt: "Sal", ingredientsTitle: "INGREDIENTES:", grapes: "Uvas", preservative: "conservador", sulphites: "sulfitos", responsible: "Sea responsable. Beba con moderación.", bottler: "Producido y embotellado por: OPF SOCIEDADE AGRÍCOLA, LDA" },
+            "fr": { name: "Français", nutritionDeclaration: "Déclaration nutritionnelle", per100: "pour 100 ml", energy: "Énergie", fat: "Matières grasses", saturates: "dont acides gras saturés", carbs: "Glucides", sugars: "dont sucres", protein: "Protéines", salt: "Sel", ingredientsTitle: "INGRÉDIENTS:", grapes: "Raisins", preservative: "conservateur", sulphites: "sulfites", responsible: "Soyez responsable. Consommez avec modération.", bottler: "Produit et mis en bouteille par: OPF SOCIEDADE AGRÍCOLA, LDA" },
+            "ga": { name: "Gaeilge", nutritionDeclaration: "Dearbhú Cothúcháin", per100: "in aghaidh 100 ml", energy: "Fuinneamh", fat: "Saill", saturates: "saill sháithithe", carbs: "Carbaihiodráit", sugars: "siúcraí", protein: "Próitéin", salt: "Salann", ingredientsTitle: "COMHÁBHAIR:", grapes: "Fíonchaora", preservative: "leasaitheach", sulphites: "suilfítí", responsible: "Bí Freagrach. Ól go Measartha.", bottler: "Táirgthe agus Buidéil ag: OPF SOCIEDADE AGRÍCOLA, LDA" },
+            "hr": { name: "Hrvatski", nutritionDeclaration: "Nutritivna deklaracija", per100: "na 100 ml", energy: "Energija", fat: "Masti", saturates: "od kojih zasićene masne kiseline", carbs: "Ugljikohidrati", sugars: "od kojih šećeri", protein: "Bjelančevine", salt: "Sol", ingredientsTitle: "SASTOJCI:", grapes: "Grožđe", preservative: "konzervans", sulphites: "sulfiti", responsible: "Budite odgovorni. Pijte umjereno.", bottler: "Proizveo i punio: OPF SOCIEDADE AGRÍCOLA, LDA" },
+            "it": { name: "Italiano", nutritionDeclaration: "Dichiarazione nutrizionale", per100: "per 100 ml", energy: "Energia", fat: "Grassi", saturates: "di cui acidi grassi saturi", carbs: "Carboidrati", sugars: "di cui zuccheri", protein: "Proteine", salt: "Sale", ingredientsTitle: "INGREDIENTI:", grapes: "Uve", preservative: "conservante", sulphites: "solfiti", responsible: "Sii responsabile. Bevi con moderazione.", bottler: "Prodotto e imbottigliato da: OPF SOCIEDADE AGRÍCOLA, LDA" },
+            "lv": { name: "Latviešu", nutritionDeclaration: "Uzturvērtības deklarācija", per100: "uz 100 ml", energy: "Enerģija", fat: "Tauki", saturates: "tostarp piesātinātās taukskābes", carbs: "Ogļhidrāti", sugars: "tostarp cukuri", protein: "Olbaltumvielas", salt: "Sāls", ingredientsTitle: "SASTĀVDAĻAS:", grapes: "Vīnogas", preservative: "konservants", sulphites: "sulfīti", responsible: "Esiet atbildīgs. Dzeriet ar mēru.", bottler: "Ražojis un pudelēs pildījis: OPF SOCIEDADE AGRÍCOLA, LDA" },
+            "lt": { name: "Lietuvių", nutritionDeclaration: "Maistingumo deklaracija", per100: "100 ml", energy: "Energija", fat: "Riebalai", saturates: "iš kurių sočiųjų riebalų rūgščių", carbs: "Angliavandeniai", sugars: "iš kurių cukrų", protein: "Baltymai", salt: "Druska", ingredientsTitle: "SUDEDAMOSIOS DALYS:", grapes: "Vynuogės", preservative: "konservantas", sulphites: "ulfitai", responsible: "Būkite atsakingi. Vartokite saikingai.", bottler: "Pagamino ir išpilstė: OPF SOCIEDADE AGRÍCOLA, LDA" },
+            "hu": { name: "Magyar", nutritionDeclaration: "Tápértékjelölés", per100: "100 ml-ben", energy: "Energia", fat: "Zsír", saturates: "amelyből telített zsírsavak", carbs: "Szénhidrát", sugars: "amelyből cukrok", protein: "Fehérje", salt: "Só", ingredientsTitle: "ÖSSZETEVŐK:", grapes: "Szőlő", preservative: "tartósítószer", sulphites: "szulfitok", responsible: "Legyen felelősségteljes. Fogyassza mértékkel.", bottler: "Termelte és palackozta: OPF SOCIEDADE AGRÍCOLA, LDA" },
+            "mt": { name: "Malti", nutritionDeclaration: "Dikjarazzjoni Nutrizzjonali", per100: "għal kull 100 ml", energy: "Enerġija", fat: "Xaħam", saturates: "li minnhom saturati", carbs: "Karboidrati", sugars: "li minnhom zokkor", protein: "Proteini", salt: "Melħ", ingredientsTitle: "INGREDJENTI:", grapes: "Għeneb", preservative: "preżervattiv", sulphites: "sulfiti", responsible: "Kun Responsabbli. Ixrob b'Moderazzjoni.", bottler: "Prodott u bbottiljat minn: OPF SOCIEDADE AGRÍCOLA, LDA" },
+            "nl": { name: "Nederlands", nutritionDeclaration: "Voedingswaardevermelding", per100: "per 100 ml", energy: "Energie", fat: "Vetten", saturates: "waarvan verzadigde vetzuren", carbs: "Koolhydraten", sugars: "waarvan suikers", protein: "Eiwitten", salt: "Zout", ingredientsTitle: "INGREDIËNTEN:", grapes: "Druiven", preservative: "conserveermiddel", sulphites: "sulfieten", responsible: "Wees verantwoordelijk. Drink met mate.", bottler: "Geproduceerd en gebotteld door: OPF SOCIEDADE AGRÍCOLA, LDA" },
+            "pl": { name: "Polski", nutritionDeclaration: "Wartość odżywcza", per100: "w 100 ml", energy: "Energia", fat: "Tłuszcz", saturates: "w tym kwasy tłuszczowe nasycone", carbs: "Węglowodany", sugars: "w tym cukry", protein: "Białko", salt: "Sól", ingredientsTitle: "SKŁADNIKI:", grapes: "Winogrona", preservative: "substancja konserwująca", sulphites: "siarczyny", responsible: "Bądź odpowiedzialny. Pij z umiarem.", bottler: "Wyprodukowano i zabutelkowano przez: OPF SOCIEDADE AGRÍCOLA, LDA" },
+            "pt": { name: "Português", nutritionDeclaration: "Declaração Nutricional", per100: "por 100 ml", energy: "Energia", fat: "Lípidos", saturates: "dos quais saturados", carbs: "Hidratos de carbono", sugars: "dos quais açúcares", protein: "Proteínas", salt: "Sal", ingredientsTitle: "INGREDIENTES:", grapes: "Uvas", preservative: "conservante", sulphites: "sulfitos", responsible: "Seja Responsável. Beba com Moderação.", bottler: "Produzido e Engarrafado por: OPF SOCIEDADE AGRÍCOLA, LDA" },
+            "ro": { name: "Română", nutritionDeclaration: "Declarație nutrițională", per100: "per 100 ml", energy: "Valoare energetică", fat: "Grăsimi", saturates: "din care acizi grași saturați", carbs: "Glucide", sugars: "din care zaharuri", protein: "Proteine", salt: "Sare", ingredientsTitle: "INGREDIENTE:", grapes: "Struguri", preservative: "conservant", sulphites: "sulfiți", responsible: "Fii responsabil. Bea cu moderație.", bottler: "Produs și îmbuteliat de: OPF SOCIEDADE AGRÍCOLA, LDA" },
+            "sk": { name: "Slovenčina", nutritionDeclaration: "Výživové údaje", per100: "na 100 ml", energy: "Energia", fat: "Tuky", saturates: "z toho nasýtené mastné kyseliny", carbs: "Sacharidy", sugars: "z toho cukry", protein: "Bielkoviny", salt: "Soľ", ingredientsTitle: "ZLOŽENIE:", grapes: "Hrozno", preservative: "konzervant", sulphites: "siričitany", responsible: "Buďte zodpovední. Pite s mierou.", bottler: "Vyrobené a plnené: OPF SOCIEDADE AGRÍCOLA, LDA" },
+            "sl": { name: "Slovenščina", nutritionDeclaration: "Hranilna vrednost", per100: "na 100 ml", energy: "Energija", fat: "Maščobe", saturates: "od tega nasičene maščobe", carbs: "Ogljikovi hidrati", sugars: "od tega sladkorji", protein: "Beljakovine", salt: "Sol", ingredientsTitle: "SESTAVINE:", grapes: "Grozdje", preservative: "konzervans", sulphites: "sulfiti", responsible: "Bodite odgovorni. Pijte zmerno.", bottler: "Proizvedeno in stekleničeno s strani: OPF SOCIEDADE AGRÍCOLA, LDA" },
+            "fi": { name: "Suomi", nutritionDeclaration: "Ravintoarvoilmoitus", per100: "100 ml kohti", energy: "Energia", fat: "Rasva", saturates: "josta tyydyttynyttä", carbs: "Hiilihydraatit", sugars: "josta sokereita", protein: "Proteiini", salt: "Suola", ingredientsTitle: "AINESOSAT:", grapes: "Rypäleet", preservative: "säilöntäaine", sulphites: "sulfiitteja", responsible: "Ole vastuullinen. Juo kohtuudella.", bottler: "Tuottanut ja pullottanut: OPF SOCIEDADE AGRÍCOLA, LDA" },
+            "sv": { name: "Svenska", nutritionDeclaration: "Näringsdeklaration", per100: "per 100 ml", energy: "Energi", fat: "Fett", saturates: "varav mättat fett", carbs: "Kolhydrat", sugars: "varav sockerarter", protein: "Protein", salt: "Salt", ingredientsTitle: "INGREDIENSER:", grapes: "Druvor", preservative: "konserveringsmedel", sulphites: "sulfiter", responsible: "Var ansvarsfull. Drick med måtta.", bottler: "Producerad och buteljerad av: OPF SOCIEDADE AGRÍCOLA, LDA" }
+        };
+
+        const languageSelect = document.getElementById('language-select');
+        const elementsToTranslate = document.querySelectorAll('[data-key]');
+
+        // Populate dropdown
+        for (const [code, data] of Object.entries(translations)) {
+            let option = document.createElement('option');
+            option.value = code;
+            option.textContent = data.name;
+            languageSelect.appendChild(option);
+        }
+
+        // Function to update text
+        function changeLanguage(langCode) {
+            const t = translations[langCode];
+            if (!t) return;
+
+            document.documentElement.lang = langCode;
+
+            elementsToTranslate.forEach(el => {
+                const key = el.getAttribute('data-key');
+                if (t[key]) {
+                    el.textContent = t[key];
+                }
+            });
+        }
+
+        // Auto-detect browser language or default to English
+        const userLang = navigator.language.slice(0, 2);
+        const defaultLang = translations[userLang] ? userLang : 'en';
+        
+        // Set dropdown value and trigger update
+        languageSelect.value = defaultLang;
+        changeLanguage(defaultLang);
+
+    </script>
+</body>
+</html>
